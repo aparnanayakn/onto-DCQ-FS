@@ -1,2 +1,6 @@
-{"lung-cancer.data": {"instances": 31, "attributes": 57, "uniqueClasses": 2}, 
-"adult.data": {"instances": 32560, "attributes": 15, "uniqueClasses": 2}, "bridges.data": {"instances": 107, "attributes": 13, "uniqueClasses": 8}, "trains-transformed.data": {"instances": 9, "attributes": 1, "uniqueClasses": 9}, "arrhythmia.data": {"instances": 451, "attributes": 280, "uniqueClasses": 13}, "dermatology.data": {"instances": 365, "attributes": 35, "uniqueClasses": 6}, "yellow-small+adult-stretch.data": {"instances": 75, "attributes": 5, "uniqueClasses": 2}}
+{"lung-cancer.data": {"instances": 31, "attributes": 57, "uniqueClasses": 2, "spCorr": 0.018483709273182956, "pCorr": 0.8978696741854637, "snCorr": 0.0, "nCorr": 0.03132832080200501}, 
+"adult.data": {"instances": 32560, "attributes": 15, "uniqueClasses": 2, "spCorr": 0.02857142857142857, "pCorr": 0.14285714285714285, "snCorr": 0.0, "nCorr": 0.0}, 
+"bridges.data": {"instances": 107, "attributes": 13, "uniqueClasses": 8}, 
+"trains-transformed.data": {"instances": 9, "attributes": 1, "uniqueClasses": 9},
+ "arrhythmia.data": {"instances": 451, "attributes": 280, "uniqueClasses": 13, "spCorr": 0.0033026113671274964, "pCorr": 0.8487711213517665, "snCorr": 0.0, "nCorr": 0.11598822324628776}, "dermatology.data": {"instances": 365, "attributes": 35, "uniqueClasses": 6, "spCorr": 0.02857142857142857, "pCorr": 0.9428571428571428, "snCorr": 0.0, "nCorr": 0.0}, 
+ "yellow-small+adult-stretch.data": {"instances": 75, "attributes": 5, "uniqueClasses": 2}}
