@@ -1,0 +1,5 @@
+{"data_banknote_authentication.csv": {"classOverlap": 0, "outlierDetection": 22, "completeness": 0.0, "imbalanceRatio": 0, "conciseness": 0.9825072886297376, 
+    "syntaxAccuracy": 1.0}, "wine.data": {"classOverlap": 0, "outlierDetection": 0, "completeness": 0.0, "imbalanceRatio": 0, "conciseness": 1.0, 
+        "syntaxAccuracy": 1.0}, 
+        "heart_failure_clinical_records_dataset.csv": {"classOverlap": 0, "outlierDetection": 1, "completeness": 0.0, 
+            "imbalanceRatio": 35.78595317725752, "conciseness": 1.0, "syntaxAccuracy": 0.8461538461538461}}
