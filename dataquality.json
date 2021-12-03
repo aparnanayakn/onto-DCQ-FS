@@ -1,5 +1,12 @@
-{"data_banknote_authentication.csv": {"classOverlap": 0, "outlierDetection": 22, "completeness": 0.0, "imbalanceRatio": 0, "conciseness": 0.9825072886297376, 
-    "syntaxAccuracy": 1.0}, "wine.data": {"classOverlap": 0, "outlierDetection": 0, "completeness": 0.0, "imbalanceRatio": 0, "conciseness": 1.0, 
-        "syntaxAccuracy": 1.0}, 
-        "heart_failure_clinical_records_dataset.csv": {"classOverlap": 0, "outlierDetection": 1, "completeness": 0.0, 
-            "imbalanceRatio": 35.78595317725752, "conciseness": 1.0, "syntaxAccuracy": 0.8461538461538461}}
+{"data_banknote_authentication.csv": 
+    {"instances": 1372, "attributes": 5, "uniqueClasses": 2, "entropy": 0.9911281257467461, "classOverlap": 0.0, 
+        "outlierDetection": 0.0014577259475218659, "completeness": 0.0, "imbalanceRatio": 0.0, "conciseness": 0.017492711370262426, 
+        "syntaxAccuracy": 0.0}, 
+        "wine.data": {"instances": 178, "attributes": 14, "uniqueClasses": 3, "entropy": 0.9885547930265092, "classOverlap": 0.0,
+             "outlierDetection": 0.0, "completeness": 0.0, "imbalanceRatio": 0.0, "conciseness": 0.0, "syntaxAccuracy": 0.0}, 
+             "heart_failure_clinical_records_dataset.csv": {"instances": 299, "attributes": 13, "uniqueClasses": 2, "entropy": 0.9055415027672631, 
+                "classOverlap": 0.0, "outlierDetection": 0.0002572678157962439, "completeness": 0.0, "imbalanceRatio": 0.009206574010099696, "conciseness": 0.0, 
+                "syntaxAccuracy": 0.15384615384615385}, "divorce.xlsx": {"instances": 170, "attributes": 55, "uniqueClasses": 2, "entropy": 0.9999001572094884,
+
+                    "spCorr": 0.018518518518518517, "pCorr": 1.0, "snCorr": 0.0, "nCorr": 0.0, "classOverlap": 0.0, "outlierDetection": 0.000106951871657754, 
+                    "completeness": 0.0, "imbalanceRatio": 0.0, "conciseness": 0.11764705882352944, "syntaxAccuracy": 0.0}}
