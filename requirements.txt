@@ -1,0 +1,2 @@
+#for information_gain_ratio https://github.com/Thijsvanede/info_gain
+scipy>=1.1.0
