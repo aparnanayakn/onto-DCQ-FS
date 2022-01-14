@@ -1,0 +1,4 @@
+<http://data.example.org/sw/Venus>
+        a       <http://www.example.org/ont#Person> ;
+        <http://www.example.org/ont#NAME>
+                "Venus"@kn .

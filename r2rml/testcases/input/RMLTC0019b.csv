@@ -1,0 +1,3 @@
+ID,dt,FirstName,LastName
+10,xsd:integer,http://example.com/ns#Jhon,Smith
+20,xsd:integer,Carlos,Mendoza

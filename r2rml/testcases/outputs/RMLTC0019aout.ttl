@@ -1,0 +1,17 @@
+<http://data.example.org/sw/2>
+        a       <http://www.example.org/ont#Person> ;
+        <http://www.example.org/ont#DATEOFBIRTH>
+                "September, 2010" ;
+        <http://www.example.org/ont#FNAME>
+                "Bob" ;
+        <http://www.example.org/ont#ID>
+                "2" .
+
+<http://data.example.org/sw/1>
+        a       <http://www.example.org/ont#Person> ;
+        <http://www.example.org/ont#DATEOFBIRTH>
+                "September, 2012" ;
+        <http://www.example.org/ont#FNAME>
+                "Alice" ;
+        <http://www.example.org/ont#ID>
+                "1" .

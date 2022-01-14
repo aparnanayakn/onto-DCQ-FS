@@ -1,0 +1,17 @@
+<http://data.example.org/sw/Bob>
+        a       <http://www.example.org/ont#Person> ;
+        <http://www.example.org/ont#AMOUNT>
+                "30" ;
+        <http://www.example.org/ont#FNAME>
+                "Bob" ;
+        <http://www.example.org/ont#LNAME>
+                "Smith"@en .
+
+<http://data.example.org/sw/Sue>
+        a       <http://www.example.org/ont#Person> ;
+        <http://www.example.org/ont#AMOUNT>
+                "20" ;
+        <http://www.example.org/ont#FNAME>
+                "Sue" ;
+        <http://www.example.org/ont#LNAME>
+                "Jones"@en .

@@ -1,0 +1,17 @@
+<http://data.example.org/sw/John>
+        a       <http://www.example.org/ont#Person> ;
+        <http://www.example.org/ont#FNAME>
+                "John" ;
+        <http://www.example.org/ont#LNAME>
+                "Doe"@en ;
+        <http://www.example.org/ont#NUM>
+                "3.0"^^<xsd:integer> .
+
+<http://data.example.org/sw/Jane>
+        a       <http://www.example.org/ont#Person> ;
+        <http://www.example.org/ont#FNAME>
+                "Jane" ;
+        <http://www.example.org/ont#LNAME>
+                "Smith"@fr ;
+        <http://www.example.org/ont#NUM>
+                "3.14"^^<xsd:decimal> .

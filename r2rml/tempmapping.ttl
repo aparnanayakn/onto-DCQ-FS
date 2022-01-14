@@ -1,0 +1,29 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix dcqv1: <http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rrf: <http://kdeg.scss.tcd.ie/ns/rrf#>
+@prefix dcat: <http://www.w3.org/ns/dcat#>
+
+<#lgdtkg>
+    a rr:TriplesMap ;
+
+    rr:logicalTable [rr:tableName "qwe" ]; 
+
+    rr:subjectMap [
+        rr:template "http://www.w3.org/ns/dcat/{FNAME}";
+        rr:class dcat:Dataset ;
+    ];
+
+    rr:predicateObjectMap [
+        rr:predicate dcqv1:completeness;
+
+        rr:objectMap [
+            rr:column "COMPLETENESS"; 
+            rr:datatype xsd:decimal;
+        ];
+    ] ;
+
+.
+
+

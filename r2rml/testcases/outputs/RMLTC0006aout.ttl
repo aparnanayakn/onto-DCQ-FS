@@ -1,0 +1,8 @@
+<http://data.example.org/sw/10.12>
+        a       <http://www.example.org/ont#Person> ;
+        <http://www.example.org/ont#FNAME>
+                "Venus" ;
+        <http://www.example.org/ont#ID>
+                "10.12"^^<xsd:decimal> ;
+        <http://www.example.org/ont#LNAME>
+                "Williams" .

@@ -1,0 +1,6 @@
+<http://data.example.org/sw/Bolivia,%20Plurinational%20State%20of>
+        a       <http://www.example.org/ont#Country> ;
+        <http://www.example.org/ont#ISO>
+                "BO" ;
+        <http://www.example.org/ont#NAME>
+                "Bolivia, Plurinational State of" .

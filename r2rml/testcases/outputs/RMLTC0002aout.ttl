@@ -1,0 +1,6 @@
+<http://data.example.org/sw/10>
+        a       <http://www.example.org/ont#Person> ;
+        <http://www.example.org/ont#ID>
+                "10"^^<xsd:integer> ;
+        <http://www.example.org/ont#NAME>
+                "Venus" .

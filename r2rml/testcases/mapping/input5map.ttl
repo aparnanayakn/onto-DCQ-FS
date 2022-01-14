@@ -1,0 +1,77 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix fcc: <http://www.example.org/ont#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rrf: <http://kdeg.scss.tcd.ie/ns/rrf#>
+
+<#lgdtkg>
+    a rr:TriplesMap ;
+
+    rr:logicalTable [rr:tableName "input5" ]; 
+
+    rr:subjectMap [
+        rr:template "http://data.example.org/sw/{FIRSTNAME}";
+        rr:class fcc:Person ;
+    ];
+
+    rr:predicateObjectMap [
+        rr:predicate fcc:FNAME;
+
+        rr:objectMap [
+            rr:column "FIRSTNAME"; 
+
+        ];
+    ];
+
+
+    rr:predicateObjectMap [
+        rr:predicate fcc:LNAME;
+
+        rr:objectMap [
+           rrf:functionCall [
+	 			rrf:function <#Attachlg> ;
+	 			rrf:parameterBindings (
+	 				[ rr:column "LASTNAME" ]
+	 				[ rr:column "LANG" ]
+	 			) ;
+	 		] ; 
+        ];
+    ];
+
+
+    rr:predicateObjectMap [
+        rr:predicate fcc:NUM;
+
+        rr:objectMap [
+           rrf:functionCall [
+	 			rrf:function <#Attachdt> ;
+	 			rrf:parameterBindings (
+	 				[ rr:column "NUM" ]
+	 				[ rr:column "DT" ]
+	 			) ;
+	 		] ; 
+        ];
+    ];
+
+.
+<#Attachdt>
+	rrf:functionName "attachdt" ;
+	rrf:functionBody """
+		function attachdt(var1, var2) {
+        
+		return var1 + " " + var2 ;
+	}
+	""" ;
+.
+<#Attachlg>
+	rrf:functionName "attachlg" ;
+	rrf:functionBody """
+		function attachlg(var1, var2) {
+        
+		return var1 + " " + var2 ;
+	}
+	""" ;
+
+   .
+
+

@@ -1,0 +1,49 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix fcc: <http://www.example.org/ont#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rrf: <http://kdeg.scss.tcd.ie/ns/rrf#>
+
+<#lgdtkg>
+    a rr:TriplesMap ;
+
+    rr:logicalTable [rr:tableName "RMLTC0004b" ]; 
+
+    rr:subjectMap [
+        rr:template "http://data.example.org/sw/{NAME}";
+        rr:class fcc:Person ;
+    ];
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate fcc:NAME;
+
+        rr:objectMap [
+            rr:column "NAME"; 
+
+        ];
+    ];
+
+.
+<#Attachdt>
+	rrf:functionName "attachdt" ;
+	rrf:functionBody """
+		function attachdt(var1, var2) {
+        
+		return var1 + " " + var2 ;
+	}
+	""" ;
+.
+<#Attachlg>
+	rrf:functionName "attachlg" ;
+	rrf:functionBody """
+		function attachlg(var1, var2) {
+        
+		return var1 + " " + var2 ;
+	}
+	""" ;
+
+   .
+
+
