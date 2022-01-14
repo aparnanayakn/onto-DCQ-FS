@@ -1,0 +1,572 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#"
+     xml:base="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1"
+     xmlns:g="http://www.semanticweb.org/d19125691/ontologies/2022/0/untitled-ontology-34/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:dcqv0="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv0#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1">
+        <owl:imports rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv0"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv0#hasDimension -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv0#hasDimension">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv0#Characteristics"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv0#information"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv0#simple"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv0#statistical"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv0#hasfileName -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv0#hasfileName">
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#fileName"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#hasClassMetric -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#hasClassMetric">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv0#Classification"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv0#ClassImbalance"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv0#ClassOverlap"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv0#LabelNoise"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv0#Outliers"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#hasInforMetric -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#hasInforMetric">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv0#information"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv0#ClassEntropy"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv0#EqualNumberOfAttributes"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv0#SignalNoiseRatio"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#hasIntrinsicMetric -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#hasIntrinsicMetric">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv0#Intrinsic"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv0#Accuracy"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv0#Completeness"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv0#Conciseness"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv0#Interpretability"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#hasSimpleMetric -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#hasSimpleMetric">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv0#simple"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv0#NumberOfClasses"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv0#NumberOfFeatures"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv0#NumberOfInstances"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#hasStatisticalMetric -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#hasStatisticalMetric">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv0#statistical"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv0#Asymmetry"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv0#Correlation"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv0#NumberOfFeatures -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv0#NumberOfFeatures">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv0#NumberOfInstances -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv0#NumberOfInstances">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#fileName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#fileName">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#moderateAsymmetrical -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#moderateAsymmetrical">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv0#Asymmetry"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv0#statistical"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#negative -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#negative">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv0#Correlation"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv0#statistical"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#positive -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#positive">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv0#Correlation"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#strongAsymmetrical -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#strongAsymmetrical">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv0#Asymmetry"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv0#statistical"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#strongNegative -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#strongNegative">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv0#Correlation"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv0#statistical"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#strongPositive -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#strongPositive">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv0#Correlation"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#symmetrical -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#symmetrical">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv0#Asymmetry"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv0#statistical"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#HCV-Egy-Data2.csv -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#HCV-Egy-Data2.csv">
+        <rdf:type rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv0#CategoricalLabeledDataset"/>
+        <dcqv0:Accuracy rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</dcqv0:Accuracy>
+        <dcqv0:ClassEntropy rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.9995244237916912</dcqv0:ClassEntropy>
+        <dcqv0:ClassImbalance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</dcqv0:ClassImbalance>
+        <dcqv0:ClassOverlap rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</dcqv0:ClassOverlap>
+        <dcqv0:Completeness rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</dcqv0:Completeness>
+        <dcqv0:Conciseness rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</dcqv0:Conciseness>
+        <dcqv0:EqualNumberOfAttributes rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.03517261274300815</dcqv0:EqualNumberOfAttributes>
+        <dcqv0:NumberOfClasses rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</dcqv0:NumberOfClasses>
+        <dcqv0:NumberOfFeatures rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">29</dcqv0:NumberOfFeatures>
+        <dcqv0:NumberOfInstances rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1385</dcqv0:NumberOfInstances>
+        <dcqv0:Outliers rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</dcqv0:Outliers>
+        <dcqv0:SignalNoiseRatio rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.722892647405828</dcqv0:SignalNoiseRatio>
+        <moderateAsymmetrical rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.2666666666666667</moderateAsymmetrical>
+        <negative rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.1157635467980296</negative>
+        <positive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.1083743842364532</positive>
+        <strongAsymmetrical rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</strongAsymmetrical>
+        <strongNegative rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</strongNegative>
+        <strongPositive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.01724137931034483</strongPositive>
+        <symmetrical rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.7333333333333333</symmetrical>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#LasVegasTripAdvisorReviews-Dataset.csv -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#LasVegasTripAdvisorReviews-Dataset.csv">
+        <rdf:type rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv0#CategoricalLabeledDataset"/>
+        <dcqv0:Accuracy rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.1</dcqv0:Accuracy>
+        <dcqv0:ClassEntropy rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.9962248782016787</dcqv0:ClassEntropy>
+        <dcqv0:ClassImbalance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</dcqv0:ClassImbalance>
+        <dcqv0:ClassOverlap rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</dcqv0:ClassOverlap>
+        <dcqv0:Completeness rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</dcqv0:Completeness>
+        <dcqv0:Conciseness rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</dcqv0:Conciseness>
+        <dcqv0:EqualNumberOfAttributes rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0429883442549891</dcqv0:EqualNumberOfAttributes>
+        <dcqv0:NumberOfClasses rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</dcqv0:NumberOfClasses>
+        <dcqv0:NumberOfFeatures rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</dcqv0:NumberOfFeatures>
+        <dcqv0:NumberOfInstances rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">504</dcqv0:NumberOfInstances>
+        <dcqv0:Outliers rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.00376984126984127</dcqv0:Outliers>
+        <dcqv0:SignalNoiseRatio rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.04545634942678341</dcqv0:SignalNoiseRatio>
+        <moderateAsymmetrical rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</moderateAsymmetrical>
+        <negative rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.3947368421052632</negative>
+        <positive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.3210526315789474</positive>
+        <strongAsymmetrical rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</strongAsymmetrical>
+        <strongNegative rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</strongNegative>
+        <strongPositive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.04473684210526316</strongPositive>
+        <symmetrical rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</symmetrical>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#WholesaleCustomersdata.csv -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#WholesaleCustomersdata.csv">
+        <rdf:type rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv0#CategoricalLabeledDataset"/>
+        <dcqv0:Accuracy rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</dcqv0:Accuracy>
+        <dcqv0:ClassEntropy rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.9073226451896848</dcqv0:ClassEntropy>
+        <dcqv0:ClassImbalance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.01007231404958677</dcqv0:ClassImbalance>
+        <dcqv0:ClassOverlap rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</dcqv0:ClassOverlap>
+        <dcqv0:Completeness rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</dcqv0:Completeness>
+        <dcqv0:Conciseness rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</dcqv0:Conciseness>
+        <dcqv0:EqualNumberOfAttributes rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.444319074001588</dcqv0:EqualNumberOfAttributes>
+        <dcqv0:NumberOfClasses rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</dcqv0:NumberOfClasses>
+        <dcqv0:NumberOfFeatures rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</dcqv0:NumberOfFeatures>
+        <dcqv0:NumberOfInstances rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">440</dcqv0:NumberOfInstances>
+        <dcqv0:Outliers rdf:datatype="http://www.w3.org/2001/XMLSchema#double">5.681818181818182E-4</dcqv0:Outliers>
+        <dcqv0:SignalNoiseRatio rdf:datatype="http://www.w3.org/2001/XMLSchema#double">50.70997990561757</dcqv0:SignalNoiseRatio>
+        <moderateAsymmetrical rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.6666666666666666</moderateAsymmetrical>
+        <negative rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</negative>
+        <positive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.03571428571428571</positive>
+        <strongAsymmetrical rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.3333333333333333</strongAsymmetrical>
+        <strongNegative rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</strongNegative>
+        <strongPositive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.03571428571428571</strongPositive>
+        <symmetrical rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</symmetrical>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#bank-full.csv -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#bank-full.csv">
+        <rdf:type rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv0#CategoricalLabeledDataset"/>
+        <dcqv0:Accuracy rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.05882352941176471</dcqv0:Accuracy>
+        <dcqv0:ClassEntropy rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5206312212538164</dcqv0:ClassEntropy>
+        <dcqv0:ClassImbalance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">9.966736242404426E-5</dcqv0:ClassImbalance>
+        <dcqv0:ClassOverlap rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</dcqv0:ClassOverlap>
+        <dcqv0:Completeness rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</dcqv0:Completeness>
+        <dcqv0:Conciseness rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</dcqv0:Conciseness>
+        <dcqv0:EqualNumberOfAttributes rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.02144394773667863</dcqv0:EqualNumberOfAttributes>
+        <dcqv0:NumberOfClasses rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</dcqv0:NumberOfClasses>
+        <dcqv0:NumberOfFeatures rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">17</dcqv0:NumberOfFeatures>
+        <dcqv0:NumberOfInstances rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">45211</dcqv0:NumberOfInstances>
+        <dcqv0:Outliers rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.431197769413222E-5</dcqv0:Outliers>
+        <dcqv0:SignalNoiseRatio rdf:datatype="http://www.w3.org/2001/XMLSchema#double">5.382458896581244</dcqv0:SignalNoiseRatio>
+        <moderateAsymmetrical rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</moderateAsymmetrical>
+        <negative rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.4852941176470588</negative>
+        <positive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.3970588235294117</positive>
+        <strongAsymmetrical rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</strongAsymmetrical>
+        <strongNegative rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</strongNegative>
+        <strongPositive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.05882352941176471</strongPositive>
+        <symmetrical rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</symmetrical>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#caesarian.csv -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#caesarian.csv">
+        <rdf:type rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv0#CategoricalLabeledDataset"/>
+        <dcqv0:Accuracy rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</dcqv0:Accuracy>
+        <dcqv0:ClassEntropy rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.980377508715691</dcqv0:ClassEntropy>
+        <dcqv0:ClassImbalance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</dcqv0:ClassImbalance>
+        <dcqv0:ClassOverlap rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</dcqv0:ClassOverlap>
+        <dcqv0:Completeness rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</dcqv0:Completeness>
+        <dcqv0:Conciseness rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.05063291139240511</dcqv0:Conciseness>
+        <dcqv0:EqualNumberOfAttributes rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.1814602515666407</dcqv0:EqualNumberOfAttributes>
+        <dcqv0:NumberOfClasses rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</dcqv0:NumberOfClasses>
+        <dcqv0:NumberOfFeatures rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</dcqv0:NumberOfFeatures>
+        <dcqv0:NumberOfInstances rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">79</dcqv0:NumberOfInstances>
+        <dcqv0:Outliers rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.002109704641350211</dcqv0:Outliers>
+        <dcqv0:SignalNoiseRatio rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.363784605270925</dcqv0:SignalNoiseRatio>
+        <moderateAsymmetrical rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</moderateAsymmetrical>
+        <negative rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.3333333333333333</negative>
+        <positive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.3333333333333333</positive>
+        <strongAsymmetrical rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</strongAsymmetrical>
+        <strongNegative rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</strongNegative>
+        <strongPositive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.1666666666666667</strongPositive>
+        <symmetrical rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</symmetrical>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#data_banknote_authentication.csv -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#data_banknote_authentication.csv">
+        <rdf:type rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv0#CategoricalLabeledDataset"/>
+        <dcqv0:Accuracy rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</dcqv0:Accuracy>
+        <dcqv0:ClassEntropy rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.9912319108478986</dcqv0:ClassEntropy>
+        <dcqv0:ClassImbalance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</dcqv0:ClassImbalance>
+        <dcqv0:ClassOverlap rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</dcqv0:ClassOverlap>
+        <dcqv0:Completeness rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</dcqv0:Completeness>
+        <dcqv0:Conciseness rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.01750547045951856</dcqv0:Conciseness>
+        <dcqv0:EqualNumberOfAttributes rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.128797706365377</dcqv0:EqualNumberOfAttributes>
+        <dcqv0:NumberOfClasses rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</dcqv0:NumberOfClasses>
+        <dcqv0:NumberOfFeatures rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</dcqv0:NumberOfFeatures>
+        <dcqv0:NumberOfInstances rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1371</dcqv0:NumberOfInstances>
+        <dcqv0:Outliers rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.002917578409919767</dcqv0:Outliers>
+        <dcqv0:SignalNoiseRatio rdf:datatype="http://www.w3.org/2001/XMLSchema#double">161.964551176738</dcqv0:SignalNoiseRatio>
+        <moderateAsymmetrical rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.25</moderateAsymmetrical>
+        <negative rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</negative>
+        <positive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</positive>
+        <strongAsymmetrical rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</strongAsymmetrical>
+        <strongNegative rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</strongNegative>
+        <strongPositive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.05</strongPositive>
+        <symmetrical rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.75</symmetrical>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#glass.data -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#glass.data">
+        <rdf:type rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv0#CategoricalLabeledDataset"/>
+        <dcqv0:Accuracy rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</dcqv0:Accuracy>
+        <dcqv0:ClassEntropy rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.8430105892200701</dcqv0:ClassEntropy>
+        <dcqv0:ClassImbalance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0134252663512731</dcqv0:ClassImbalance>
+        <dcqv0:ClassOverlap rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</dcqv0:ClassOverlap>
+        <dcqv0:Completeness rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</dcqv0:Completeness>
+        <dcqv0:Conciseness rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</dcqv0:Conciseness>
+        <dcqv0:EqualNumberOfAttributes rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0577094811737323</dcqv0:EqualNumberOfAttributes>
+        <dcqv0:NumberOfClasses rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</dcqv0:NumberOfClasses>
+        <dcqv0:NumberOfFeatures rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</dcqv0:NumberOfFeatures>
+        <dcqv0:NumberOfInstances rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">213</dcqv0:NumberOfInstances>
+        <dcqv0:Outliers rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.001707212974818609</dcqv0:Outliers>
+        <dcqv0:SignalNoiseRatio rdf:datatype="http://www.w3.org/2001/XMLSchema#double">6.970026964940296</dcqv0:SignalNoiseRatio>
+        <moderateAsymmetrical rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</moderateAsymmetrical>
+        <negative rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.03636363636363636</negative>
+        <positive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.01818181818181818</positive>
+        <strongAsymmetrical rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</strongAsymmetrical>
+        <strongNegative rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</strongNegative>
+        <strongPositive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.02727272727272727</strongPositive>
+        <symmetrical rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</symmetrical>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#heart_failure_clinical_records_datase.csv -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#heart_failure_clinical_records_datase.csv">
+        <rdf:type rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv0#CategoricalLabeledDataset"/>
+        <dcqv0:Accuracy rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.1538461538461539</dcqv0:Accuracy>
+        <dcqv0:ClassEntropy rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.9055415027672631</dcqv0:ClassEntropy>
+        <dcqv0:ClassImbalance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.009206574010099696</dcqv0:ClassImbalance>
+        <dcqv0:ClassOverlap rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</dcqv0:ClassOverlap>
+        <dcqv0:Completeness rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</dcqv0:Completeness>
+        <dcqv0:Conciseness rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</dcqv0:Conciseness>
+        <dcqv0:EqualNumberOfAttributes rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.05980052746226236</dcqv0:EqualNumberOfAttributes>
+        <dcqv0:NumberOfClasses rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</dcqv0:NumberOfClasses>
+        <dcqv0:NumberOfFeatures rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</dcqv0:NumberOfFeatures>
+        <dcqv0:NumberOfInstances rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">299</dcqv0:NumberOfInstances>
+        <dcqv0:Outliers rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.001029071263184976</dcqv0:Outliers>
+        <dcqv0:SignalNoiseRatio rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.234217912105342</dcqv0:SignalNoiseRatio>
+        <moderateAsymmetrical rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.6</moderateAsymmetrical>
+        <negative rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.2307692307692308</negative>
+        <positive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.1282051282051282</positive>
+        <strongAsymmetrical rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.2</strongAsymmetrical>
+        <strongNegative rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</strongNegative>
+        <strongPositive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.05128205128205128</strongPositive>
+        <symmetrical rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.2</symmetrical>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#iris.data -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#iris.data">
+        <rdf:type rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv0#CategoricalLabeledDataset"/>
+        <dcqv0:Accuracy rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</dcqv0:Accuracy>
+        <dcqv0:ClassEntropy rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.9999589074278228</dcqv0:ClassEntropy>
+        <dcqv0:ClassImbalance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</dcqv0:ClassImbalance>
+        <dcqv0:ClassOverlap rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</dcqv0:ClassOverlap>
+        <dcqv0:Completeness rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</dcqv0:Completeness>
+        <dcqv0:Conciseness rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.02013422818791943</dcqv0:Conciseness>
+        <dcqv0:EqualNumberOfAttributes rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.1837736247575692</dcqv0:EqualNumberOfAttributes>
+        <dcqv0:NumberOfClasses rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</dcqv0:NumberOfClasses>
+        <dcqv0:NumberOfFeatures rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</dcqv0:NumberOfFeatures>
+        <dcqv0:NumberOfInstances rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">149</dcqv0:NumberOfInstances>
+        <dcqv0:Outliers rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</dcqv0:Outliers>
+        <dcqv0:SignalNoiseRatio rdf:datatype="http://www.w3.org/2001/XMLSchema#double">8.381718090290033</dcqv0:SignalNoiseRatio>
+        <moderateAsymmetrical rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</moderateAsymmetrical>
+        <negative rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</negative>
+        <positive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</positive>
+        <strongAsymmetrical rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</strongAsymmetrical>
+        <strongNegative rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</strongNegative>
+        <strongPositive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.05</strongPositive>
+        <symmetrical rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</symmetrical>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#wine.data -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#wine.data">
+        <rdf:type rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv0#CategoricalLabeledDataset"/>
+        <dcqv0:Accuracy rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</dcqv0:Accuracy>
+        <dcqv0:ClassEntropy rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.9884318013785918</dcqv0:ClassEntropy>
+        <dcqv0:ClassImbalance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</dcqv0:ClassImbalance>
+        <dcqv0:ClassOverlap rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</dcqv0:ClassOverlap>
+        <dcqv0:Completeness rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</dcqv0:Completeness>
+        <dcqv0:Conciseness rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</dcqv0:Conciseness>
+        <dcqv0:EqualNumberOfAttributes rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.1455275139780735</dcqv0:EqualNumberOfAttributes>
+        <dcqv0:NumberOfClasses rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</dcqv0:NumberOfClasses>
+        <dcqv0:NumberOfFeatures rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</dcqv0:NumberOfFeatures>
+        <dcqv0:NumberOfInstances rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">177</dcqv0:NumberOfInstances>
+        <dcqv0:Outliers rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.003228410008071025</dcqv0:Outliers>
+        <dcqv0:SignalNoiseRatio rdf:datatype="http://www.w3.org/2001/XMLSchema#double">12.0104104256961</dcqv0:SignalNoiseRatio>
+        <moderateAsymmetrical rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.3846153846153846</moderateAsymmetrical>
+        <negative rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</negative>
+        <positive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</positive>
+        <strongAsymmetrical rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.07692307692307693</strongAsymmetrical>
+        <strongNegative rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</strongNegative>
+        <strongPositive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.005494505494505495</strongPositive>
+        <symmetrical rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5384615384615384</symmetrical>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

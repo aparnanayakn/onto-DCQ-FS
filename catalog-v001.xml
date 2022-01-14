@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="User Entered Import Resolution" name="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv0" uri="dcqv1.owl"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1642162459879" name="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1" uri="dcqv2.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1642162459879" name="http://www.w3.org/ns/r2rml" uri="r2rml/src/r2rml.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1642162459879" name="shadowed:http://www.w3.org/ns/r2rml" uri="r2rml/target/classes/r2rml.rdf"/>
+    </group>
+</catalog>
