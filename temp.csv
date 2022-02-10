@@ -1,0 +1,6 @@
+dataset,,accuracy,f1weighted,f1micro,f1macro,fstime,clstime,dataset,classfication,featureSelection
+ 'data_banknote_authentication.csv',91,1.0,1.0,1.0,1.0,0.009381046999805999,0.010525950000101, 'data_banknote_authentication.csv', 'KNeighborsClassifier', 'GR'
+ 'data_banknote_authentication.csv',93,1.0,1.0,1.0,1.0,0.017116298000019,0.010956560000068, 'data_banknote_authentication.csv', 'KNeighborsClassifier', 'fcbf'
+ 'data_banknote_authentication.csv',94,1.0,1.0,1.0,1.0,0.027792808000412998,0.011134220999793, 'data_banknote_authentication.csv', 'KNeighborsClassifier', 'relief'
+ 'glass.data',181,1.0,1.0,1.0,1.0,0.015773321999859,0.049193293000370994, 'glass.data', 'C45', 'GR'
+ 'glass.data',184,1.0,1.0,1.0,1.0,0.018573920000108,0.045703310999670003, 'glass.data', 'C45', 'relief'

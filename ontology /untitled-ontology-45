@@ -1,0 +1,1794 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/d19125691/ontologies/2022/1/untitled-ontology-45#"
+     xml:base="http://www.semanticweb.org/d19125691/ontologies/2022/1/untitled-ontology-45"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:dcqv1="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/d19125691/ontologies/2022/1/untitled-ontology-45"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasQuality -->
+
+    <owl:ObjectProperty rdf:about="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasQuality"/>
+    
+
+
+    <!-- http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#hasNumberOfFeatures -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#hasNumberOfFeatures">
+        <rdfs:domain rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#data"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/dqv#hasQualityMeasurement"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/ns/dqv#QualityMeasurement"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#NumberOfFeatures"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/dqv#Metric"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/dqv#inDimension"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#Dimension"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#hasRecommendation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#hasRecommendation">
+        <rdfs:domain rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#data"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/dqv#hasQualityMeasurement"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/ns/dqv#QualityMeasurement"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#Recommendation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/dqv#hasQualityMeasurement -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/dqv#hasQualityMeasurement"/>
+    
+
+
+    <!-- http://www.w3.org/ns/dqv#inCategory -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/dqv#inCategory"/>
+    
+
+
+    <!-- http://www.w3.org/ns/dqv#inDimension -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/dqv#inDimension"/>
+    
+
+
+    <!-- http://www.w3.org/ns/dqv#isMeasurementOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/dqv#isMeasurementOf"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/title">
+        <rdfs:domain rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#data"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/dqv#hasQualityMeasurement"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/ns/dqv#QualityMeasurement"/>
+            </owl:Restriction>
+        </rdfs:domain>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#hasClassEntropy -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#hasClassEntropy">
+        <rdfs:domain rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#data"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#ClassEntropy"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/dqv#Metric"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/dqv#hasQualityMeasurement"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/ns/dqv#QualityMeasurement"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/dqv#inDimension"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#Dimension"/>
+            </owl:Restriction>
+        </rdfs:domain>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#hasClassImbalance -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#hasClassImbalance">
+        <rdfs:domain rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#data"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#ClassImbalance"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/dqv#Metric"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/dqv#hasQualityMeasurement"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/ns/dqv#QualityMeasurement"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/dqv#inDimension"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#Dimension"/>
+            </owl:Restriction>
+        </rdfs:domain>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#hasClassOvervlap -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#hasClassOvervlap">
+        <rdfs:domain rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#data"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#ClassOverlap"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/dqv#Metric"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/dqv#hasQualityMeasurement"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/ns/dqv#QualityMeasurement"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/dqv#inDimension"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#Dimension"/>
+            </owl:Restriction>
+        </rdfs:domain>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#hasCorrelation -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#hasCorrelation">
+        <rdfs:domain rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#data"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#Correlation"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/dqv#Metric"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/dqv#hasQualityMeasurement"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/ns/dqv#QualityMeasurement"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/dqv#inDimension"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#Dimension"/>
+            </owl:Restriction>
+        </rdfs:domain>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#hasEQA -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#hasEQA">
+        <rdfs:domain rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#data"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#EqualNumberOfAttributes"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/dqv#Metric"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/dqv#hasQualityMeasurement"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/ns/dqv#QualityMeasurement"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/dqv#inDimension"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#Dimension"/>
+            </owl:Restriction>
+        </rdfs:domain>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#hasEntropy -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#hasEntropy">
+        <rdfs:domain rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#data"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#Entropy"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/dqv#Metric"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/dqv#hasQualityMeasurement"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/ns/dqv#QualityMeasurement"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/dqv#inDimension"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#Dimension"/>
+            </owl:Restriction>
+        </rdfs:domain>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#hasFSA1 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#hasFSA1">
+        <rdfs:domain rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#data"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/dqv#hasQualityMeasurement"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/ns/dqv#QualityMeasurement"/>
+            </owl:Restriction>
+        </rdfs:domain>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#hasFSA2 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#hasFSA2">
+        <rdfs:domain rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#data"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/dqv#hasQualityMeasurement"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/ns/dqv#QualityMeasurement"/>
+            </owl:Restriction>
+        </rdfs:domain>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#hasNoOfClasses -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#hasNoOfClasses">
+        <rdfs:domain rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#NumberOfClasses"/>
+        <rdfs:domain rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#data"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/dqv#Metric"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/dqv#hasQualityMeasurement"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/ns/dqv#QualityMeasurement"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/dqv#inDimension"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#Dimension"/>
+            </owl:Restriction>
+        </rdfs:domain>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#hasNoOfFeatures -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#hasNoOfFeatures">
+        <rdfs:domain rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#NumberOfFeatures"/>
+        <rdfs:domain rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#data"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/dqv#Metric"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/dqv#hasQualityMeasurement"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/ns/dqv#QualityMeasurement"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/dqv#inDimension"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#Dimension"/>
+            </owl:Restriction>
+        </rdfs:domain>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#hasNoOfInstances -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#hasNoOfInstances">
+        <rdfs:domain rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#NumberOfInstances"/>
+        <rdfs:domain rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#data"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/dqv#Metric"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/dqv#hasQualityMeasurement"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/ns/dqv#QualityMeasurement"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/dqv#inDimension"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#Dimension"/>
+            </owl:Restriction>
+        </rdfs:domain>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#hasOutliers -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#hasOutliers">
+        <rdfs:domain rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#data"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#Outliers"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/dqv#Metric"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/dqv#hasQualityMeasurement"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/ns/dqv#QualityMeasurement"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/dqv#inDimension"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#Dimension"/>
+            </owl:Restriction>
+        </rdfs:domain>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#hasSNR -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#hasSNR">
+        <rdfs:domain rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#data"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#SignalNoiseRatio"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/dqv#Metric"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/dqv#hasQualityMeasurement"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/ns/dqv#QualityMeasurement"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/dqv#inDimension"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#Dimension"/>
+            </owl:Restriction>
+        </rdfs:domain>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#CategoricalFeature -->
+
+    <owl:Class rdf:about="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#CategoricalFeature">
+        <rdfs:subClassOf rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#Feature"/>
+        <rdfs:subClassOf rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#QualitytativeFeature"/>
+        <rdfs:subClassOf rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#data"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#Characteristic -->
+
+    <owl:Class rdf:about="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#Characteristic">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dqv#QualityMeasurement"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/dqv#isMeasurementOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/ns/dqv#Metric"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ContinuousFeature -->
+
+    <owl:Class rdf:about="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#ContinuousFeature">
+        <rdfs:subClassOf rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#Feature"/>
+        <rdfs:subClassOf rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#data"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#QuantitativeFeature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#DataCharacteristic -->
+
+    <owl:Class rdf:about="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#DataCharacteristic">
+        <rdfs:subClassOf rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#Characteristic"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dqv#QualityMeasurement"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/dqv#isMeasurementOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/ns/dqv#Metric"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#DatasetCharacteristic -->
+
+    <owl:Class rdf:about="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#DatasetCharacteristic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#Category"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#DiscreteFeature -->
+
+    <owl:Class rdf:about="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#DiscreteFeature">
+        <rdfs:subClassOf rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#Feature"/>
+        <rdfs:subClassOf rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#data"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#QuantitativeFeature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#Feature -->
+
+    <owl:Class rdf:about="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#Feature">
+        <rdfs:subClassOf rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#data"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#FeatureValue -->
+
+    <owl:Class rdf:about="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#FeatureValue">
+        <rdfs:subClassOf rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#data"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#IntervalFeature -->
+
+    <owl:Class rdf:about="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#IntervalFeature">
+        <rdfs:subClassOf rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#Feature"/>
+        <rdfs:subClassOf rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#data"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#QuantitativeFeature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#LabeledDataset -->
+
+    <owl:Class rdf:about="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#LabeledDataset">
+        <rdfs:subClassOf rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#data"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#hasQuality"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#ClassEntropy"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/dqv#hasQualityMeasurement"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/ns/dqv#QualityMeasurement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#NumberOfClasses -->
+
+    <owl:Class rdf:about="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#NumberOfClasses">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dqv#Metric"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/dqv#inDimension"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#Dimension"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#NumberOfFeatures -->
+
+    <owl:Class rdf:about="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#NumberOfFeatures">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dqv#Metric"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/dqv#inDimension"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#Dimension"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#NumberOfInstances -->
+
+    <owl:Class rdf:about="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#NumberOfInstances">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dqv#Metric"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/dqv#inDimension"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#Dimension"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#QualitytativeFeature -->
+
+    <owl:Class rdf:about="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#QualitytativeFeature">
+        <rdfs:subClassOf rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#Feature"/>
+        <rdfs:subClassOf rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#data"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#UnlabeledDataset -->
+
+    <owl:Class rdf:about="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#UnlabeledDataset">
+        <rdfs:subClassOf rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#data"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/dqv#hasQualityMeasurement"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/ns/dqv#QualityMeasurement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#data -->
+
+    <owl:Class rdf:about="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#data"/>
+    
+
+
+    <!-- http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#Category -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#Category"/>
+    
+
+
+    <!-- http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#ClassEntropy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#ClassEntropy">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dqv#Metric"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/dqv#inDimension"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#Dimension"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#ClassImbalance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#ClassImbalance">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dqv#Metric"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/dqv#inDimension"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#Dimension"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#ClassOverlap -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#ClassOverlap">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dqv#Metric"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/dqv#inDimension"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#Dimension"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#Classification -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#Classification">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#Dimension"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/dqv#inCategory"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#Category"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#Completeness -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#Completeness">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dqv#Metric"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/dqv#inDimension"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#Dimension"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#Conciseness -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#Conciseness">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dqv#Metric"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/dqv#inDimension"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#Dimension"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#Correlation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#Correlation">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dqv#Metric"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/dqv#inDimension"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#Dimension"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#DatasetQuality -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#DatasetQuality">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#Category"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#Dimension -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#Dimension">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/dqv#inCategory"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#Category"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#Entropy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#Entropy">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dqv#Metric"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/dqv#inDimension"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#Dimension"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#EqualNumberOfAttributes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#EqualNumberOfAttributes">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dqv#Metric"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/dqv#inDimension"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#Dimension"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#FCBF -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#FCBF">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#FeatureSelectionAlgorithm"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#FilterMethods"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#Recommendation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#FeatureSelectionAlgorithm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#FeatureSelectionAlgorithm">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#Recommendation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#FilterMethods -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#FilterMethods">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#FeatureSelectionAlgorithm"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#Recommendation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#GR -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#GR">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#FeatureSelectionAlgorithm"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#FilterMethods"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#Recommendation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#IG -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#IG">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#FeatureSelectionAlgorithm"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#FilterMethods"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#Recommendation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#Information-theoretical -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#Information-theoretical">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#Dimension"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/dqv#inCategory"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#Category"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#MI -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#MI">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#FeatureSelectionAlgorithm"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#FilterMethods"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#Recommendation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#MRMR -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#MRMR">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#FeatureSelectionAlgorithm"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#FilterMethods"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#Recommendation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#OrdinalFeature -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#OrdinalFeature">
+        <rdfs:subClassOf rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#Feature"/>
+        <rdfs:subClassOf rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#QualitytativeFeature"/>
+        <rdfs:subClassOf rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#data"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#Outliers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#Outliers">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dqv#Metric"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/dqv#inDimension"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#Dimension"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#QuantitativeFeature -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#QuantitativeFeature">
+        <rdfs:subClassOf rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#Feature"/>
+        <rdfs:subClassOf rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#data"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#Recommendation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#Recommendation"/>
+    
+
+
+    <!-- http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#Relief -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#Relief">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#FeatureSelectionAlgorithm"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#FilterMethods"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#Recommendation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#ReliefF -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#ReliefF">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#FeatureSelectionAlgorithm"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#FilterMethods"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#Recommendation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#SignalNoiseRatio -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#SignalNoiseRatio">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dqv#Metric"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/dqv#inDimension"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#Dimension"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#Simple -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#Simple">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#Dimension"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/dqv#inCategory"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#Category"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#Statistical -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#Statistical">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#Dimension"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/dqv#inCategory"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#Category"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#Dataset -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/dcat#Dataset">
+        <rdfs:subClassOf rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#data"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/dqv#hasQualityMeasurement"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/ns/dqv#QualityMeasurement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/dqv#Metric -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/dqv#Metric">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/dqv#inDimension"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#Dimension"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/dqv#QualityMeasurement -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/dqv#QualityMeasurement">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/dqv#isMeasurementOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/ns/dqv#Metric"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#HCV-Egy-Data2.csv -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#HCV-Egy-Data2.csv">
+        <rdf:type rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#NumberOfClasses"/>
+        <rdf:type rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#NumberOfFeatures"/>
+        <rdf:type rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#NumberOfInstances"/>
+        <rdf:type rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#data"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#ClassEntropy"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#ClassImbalance"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#ClassOverlap"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#EqualNumberOfAttributes"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#SignalNoiseRatio"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/dqv#Metric"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/dqv#hasQualityMeasurement"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/ns/dqv#QualityMeasurement"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/dqv#inDimension"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#Dimension"/>
+            </owl:Restriction>
+        </rdf:type>
+        <dcqv1:hasClassEntropy rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.999524423791691</dcqv1:hasClassEntropy>
+        <dcqv1:hasClassImbalance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</dcqv1:hasClassImbalance>
+        <dcqv1:hasClassOvervlap rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</dcqv1:hasClassOvervlap>
+        <dcqv1:hasEQA rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0351726127430082</dcqv1:hasEQA>
+        <dcqv1:hasFSA1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GR</dcqv1:hasFSA1>
+        <dcqv1:hasFSA2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GR</dcqv1:hasFSA2>
+        <dcqv1:hasNoOfClasses rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</dcqv1:hasNoOfClasses>
+        <dcqv1:hasNoOfFeatures rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">29</dcqv1:hasNoOfFeatures>
+        <dcqv1:hasNoOfInstances rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1385</dcqv1:hasNoOfInstances>
+        <dcqv1:hasSNR rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.72289264740583</dcqv1:hasSNR>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#LasVegasTripAdvisorReviews-Dataset.csv -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#LasVegasTripAdvisorReviews-Dataset.csv">
+        <rdf:type rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#NumberOfClasses"/>
+        <rdf:type rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#NumberOfFeatures"/>
+        <rdf:type rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#NumberOfInstances"/>
+        <rdf:type rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#data"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#ClassEntropy"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#ClassImbalance"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#ClassOverlap"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#EqualNumberOfAttributes"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#SignalNoiseRatio"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/dqv#Metric"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/dqv#hasQualityMeasurement"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/ns/dqv#QualityMeasurement"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/dqv#inDimension"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#Dimension"/>
+            </owl:Restriction>
+        </rdf:type>
+        <dcqv1:hasClassEntropy rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.996224878201679</dcqv1:hasClassEntropy>
+        <dcqv1:hasClassImbalance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</dcqv1:hasClassImbalance>
+        <dcqv1:hasClassOvervlap rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</dcqv1:hasClassOvervlap>
+        <dcqv1:hasEQA rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0429883442549891</dcqv1:hasEQA>
+        <dcqv1:hasFSA1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GR</dcqv1:hasFSA1>
+        <dcqv1:hasFSA2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GR</dcqv1:hasFSA2>
+        <dcqv1:hasNoOfClasses rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</dcqv1:hasNoOfClasses>
+        <dcqv1:hasNoOfFeatures rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</dcqv1:hasNoOfFeatures>
+        <dcqv1:hasNoOfInstances rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">504</dcqv1:hasNoOfInstances>
+        <dcqv1:hasSNR rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0454563494267834</dcqv1:hasSNR>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#WholesaleCustomersdata.csv -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#WholesaleCustomersdata.csv">
+        <rdf:type rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#NumberOfClasses"/>
+        <rdf:type rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#NumberOfFeatures"/>
+        <rdf:type rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#NumberOfInstances"/>
+        <rdf:type rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#data"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#ClassEntropy"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#ClassImbalance"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#ClassOverlap"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#EqualNumberOfAttributes"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#SignalNoiseRatio"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/dqv#Metric"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/dqv#hasQualityMeasurement"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/ns/dqv#QualityMeasurement"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/dqv#inDimension"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#Dimension"/>
+            </owl:Restriction>
+        </rdf:type>
+        <dcqv1:hasClassEntropy rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.907322645189685</dcqv1:hasClassEntropy>
+        <dcqv1:hasClassImbalance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0100723140495868</dcqv1:hasClassImbalance>
+        <dcqv1:hasClassOvervlap rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</dcqv1:hasClassOvervlap>
+        <dcqv1:hasEQA rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.44431907400159</dcqv1:hasEQA>
+        <dcqv1:hasFSA1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MI</dcqv1:hasFSA1>
+        <dcqv1:hasFSA2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GR</dcqv1:hasFSA2>
+        <dcqv1:hasNoOfClasses rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</dcqv1:hasNoOfClasses>
+        <dcqv1:hasNoOfFeatures rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</dcqv1:hasNoOfFeatures>
+        <dcqv1:hasNoOfInstances rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">440</dcqv1:hasNoOfInstances>
+        <dcqv1:hasSNR rdf:datatype="http://www.w3.org/2001/XMLSchema#double">50.7099799056176</dcqv1:hasSNR>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#bank-full.csv -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#bank-full.csv">
+        <rdf:type rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#NumberOfClasses"/>
+        <rdf:type rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#NumberOfFeatures"/>
+        <rdf:type rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#NumberOfInstances"/>
+        <rdf:type rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#data"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#ClassEntropy"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#ClassImbalance"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#ClassOverlap"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#EqualNumberOfAttributes"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#SignalNoiseRatio"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/dqv#Metric"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/dqv#hasQualityMeasurement"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/ns/dqv#QualityMeasurement"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/dqv#inDimension"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#Dimension"/>
+            </owl:Restriction>
+        </rdf:type>
+        <dcqv1:hasClassEntropy rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.520631221253816</dcqv1:hasClassEntropy>
+        <dcqv1:hasClassImbalance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">9.96673624240443E-5</dcqv1:hasClassImbalance>
+        <dcqv1:hasClassOvervlap rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</dcqv1:hasClassOvervlap>
+        <dcqv1:hasEQA rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0214439477366786</dcqv1:hasEQA>
+        <dcqv1:hasFSA1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fcbf</dcqv1:hasFSA1>
+        <dcqv1:hasFSA2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GR</dcqv1:hasFSA2>
+        <dcqv1:hasNoOfClasses rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</dcqv1:hasNoOfClasses>
+        <dcqv1:hasNoOfFeatures rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">17</dcqv1:hasNoOfFeatures>
+        <dcqv1:hasNoOfInstances rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">45211</dcqv1:hasNoOfInstances>
+        <dcqv1:hasSNR rdf:datatype="http://www.w3.org/2001/XMLSchema#double">5.38245889658124</dcqv1:hasSNR>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#caesarian.csv -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#caesarian.csv">
+        <rdf:type rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#NumberOfClasses"/>
+        <rdf:type rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#NumberOfFeatures"/>
+        <rdf:type rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#NumberOfInstances"/>
+        <rdf:type rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#data"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#ClassEntropy"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#ClassImbalance"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#ClassOverlap"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#EqualNumberOfAttributes"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#SignalNoiseRatio"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/dqv#Metric"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/dqv#hasQualityMeasurement"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/ns/dqv#QualityMeasurement"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/dqv#inDimension"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#Dimension"/>
+            </owl:Restriction>
+        </rdf:type>
+        <dcqv1:hasClassEntropy rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.980377508715691</dcqv1:hasClassEntropy>
+        <dcqv1:hasClassImbalance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</dcqv1:hasClassImbalance>
+        <dcqv1:hasClassOvervlap rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</dcqv1:hasClassOvervlap>
+        <dcqv1:hasEQA rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.181460251566641</dcqv1:hasEQA>
+        <dcqv1:hasFSA1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mrmr</dcqv1:hasFSA1>
+        <dcqv1:hasFSA2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fcbf</dcqv1:hasFSA2>
+        <dcqv1:hasNoOfClasses rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</dcqv1:hasNoOfClasses>
+        <dcqv1:hasNoOfFeatures rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</dcqv1:hasNoOfFeatures>
+        <dcqv1:hasNoOfInstances rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">79</dcqv1:hasNoOfInstances>
+        <dcqv1:hasSNR rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.36378460527093</dcqv1:hasSNR>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#data_banknote_authentication.csv -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#data_banknote_authentication.csv">
+        <rdf:type rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#NumberOfClasses"/>
+        <rdf:type rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#NumberOfFeatures"/>
+        <rdf:type rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#NumberOfInstances"/>
+        <rdf:type rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#data"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#ClassEntropy"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#ClassImbalance"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#ClassOverlap"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#EqualNumberOfAttributes"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#SignalNoiseRatio"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/dqv#Metric"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/dqv#hasQualityMeasurement"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/ns/dqv#QualityMeasurement"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/dqv#inDimension"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#Dimension"/>
+            </owl:Restriction>
+        </rdf:type>
+        <dcqv1:hasClassEntropy rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.991231910847899</dcqv1:hasClassEntropy>
+        <dcqv1:hasClassImbalance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</dcqv1:hasClassImbalance>
+        <dcqv1:hasClassOvervlap rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</dcqv1:hasClassOvervlap>
+        <dcqv1:hasEQA rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.128797706365377</dcqv1:hasEQA>
+        <dcqv1:hasFSA1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fcbf</dcqv1:hasFSA1>
+        <dcqv1:hasFSA2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GR</dcqv1:hasFSA2>
+        <dcqv1:hasNoOfClasses rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</dcqv1:hasNoOfClasses>
+        <dcqv1:hasNoOfFeatures rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</dcqv1:hasNoOfFeatures>
+        <dcqv1:hasNoOfInstances rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1371</dcqv1:hasNoOfInstances>
+        <dcqv1:hasSNR rdf:datatype="http://www.w3.org/2001/XMLSchema#double">161.964551176738</dcqv1:hasSNR>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#glass.data -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#glass.data">
+        <rdf:type rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#NumberOfClasses"/>
+        <rdf:type rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#NumberOfFeatures"/>
+        <rdf:type rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#NumberOfInstances"/>
+        <rdf:type rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#data"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#ClassEntropy"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#ClassImbalance"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#ClassOverlap"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#EqualNumberOfAttributes"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#SignalNoiseRatio"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/dqv#Metric"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/dqv#hasQualityMeasurement"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/ns/dqv#QualityMeasurement"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/dqv#inDimension"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#Dimension"/>
+            </owl:Restriction>
+        </rdf:type>
+        <dcqv1:hasClassEntropy rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.84301058922007</dcqv1:hasClassEntropy>
+        <dcqv1:hasClassImbalance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0134252663512731</dcqv1:hasClassImbalance>
+        <dcqv1:hasClassOvervlap rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</dcqv1:hasClassOvervlap>
+        <dcqv1:hasEQA rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0577094811737323</dcqv1:hasEQA>
+        <dcqv1:hasFSA1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MI</dcqv1:hasFSA1>
+        <dcqv1:hasFSA2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GR</dcqv1:hasFSA2>
+        <dcqv1:hasNoOfClasses rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</dcqv1:hasNoOfClasses>
+        <dcqv1:hasNoOfFeatures rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</dcqv1:hasNoOfFeatures>
+        <dcqv1:hasNoOfInstances rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">213</dcqv1:hasNoOfInstances>
+        <dcqv1:hasSNR rdf:datatype="http://www.w3.org/2001/XMLSchema#double">6.9700269649403</dcqv1:hasSNR>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#heart_failure_clinical_records_datase.csv -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#heart_failure_clinical_records_datase.csv">
+        <rdf:type rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#NumberOfClasses"/>
+        <rdf:type rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#NumberOfFeatures"/>
+        <rdf:type rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#NumberOfInstances"/>
+        <rdf:type rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#data"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#ClassEntropy"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#ClassImbalance"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#ClassOverlap"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#EqualNumberOfAttributes"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#SignalNoiseRatio"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/dqv#Metric"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/dqv#hasQualityMeasurement"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/ns/dqv#QualityMeasurement"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/dqv#inDimension"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#Dimension"/>
+            </owl:Restriction>
+        </rdf:type>
+        <dcqv1:hasClassEntropy rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.905541502767263</dcqv1:hasClassEntropy>
+        <dcqv1:hasClassImbalance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0092065740100997</dcqv1:hasClassImbalance>
+        <dcqv1:hasClassOvervlap rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</dcqv1:hasClassOvervlap>
+        <dcqv1:hasEQA rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0598005274622624</dcqv1:hasEQA>
+        <dcqv1:hasFSA1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MI</dcqv1:hasFSA1>
+        <dcqv1:hasFSA2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MI</dcqv1:hasFSA2>
+        <dcqv1:hasNoOfClasses rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</dcqv1:hasNoOfClasses>
+        <dcqv1:hasNoOfFeatures rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</dcqv1:hasNoOfFeatures>
+        <dcqv1:hasNoOfInstances rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">299</dcqv1:hasNoOfInstances>
+        <dcqv1:hasSNR rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.23421791210534</dcqv1:hasSNR>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#iris.data -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#iris.data">
+        <rdf:type rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#NumberOfClasses"/>
+        <rdf:type rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#NumberOfFeatures"/>
+        <rdf:type rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#NumberOfInstances"/>
+        <rdf:type rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#data"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#ClassEntropy"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#ClassImbalance"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#ClassOverlap"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#EqualNumberOfAttributes"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#SignalNoiseRatio"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/dqv#Metric"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/dqv#hasQualityMeasurement"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/ns/dqv#QualityMeasurement"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/dqv#inDimension"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#Dimension"/>
+            </owl:Restriction>
+        </rdf:type>
+        <dcqv1:hasClassEntropy rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.999958907427823</dcqv1:hasClassEntropy>
+        <dcqv1:hasClassImbalance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</dcqv1:hasClassImbalance>
+        <dcqv1:hasClassOvervlap rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</dcqv1:hasClassOvervlap>
+        <dcqv1:hasEQA rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.183773624757569</dcqv1:hasEQA>
+        <dcqv1:hasFSA1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">relieff</dcqv1:hasFSA1>
+        <dcqv1:hasFSA2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GR</dcqv1:hasFSA2>
+        <dcqv1:hasNoOfClasses rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</dcqv1:hasNoOfClasses>
+        <dcqv1:hasNoOfFeatures rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</dcqv1:hasNoOfFeatures>
+        <dcqv1:hasNoOfInstances rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">149</dcqv1:hasNoOfInstances>
+        <dcqv1:hasSNR rdf:datatype="http://www.w3.org/2001/XMLSchema#double">8.38171809029003</dcqv1:hasSNR>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#test1.csv -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#test1.csv">
+        <rdf:type rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#NumberOfClasses"/>
+        <rdf:type rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#NumberOfFeatures"/>
+        <rdf:type rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#NumberOfInstances"/>
+        <rdf:type rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#data"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#ClassEntropy"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#ClassImbalance"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#ClassOverlap"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#EqualNumberOfAttributes"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#SignalNoiseRatio"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/dqv#Metric"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/dqv#hasQualityMeasurement"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/ns/dqv#QualityMeasurement"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/dqv#inDimension"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#Dimension"/>
+            </owl:Restriction>
+        </rdf:type>
+        <dcqv1:hasClassEntropy rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.905541502767263</dcqv1:hasClassEntropy>
+        <dcqv1:hasClassImbalance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0092065740100997</dcqv1:hasClassImbalance>
+        <dcqv1:hasClassOvervlap rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</dcqv1:hasClassOvervlap>
+        <dcqv1:hasEQA rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0598005274622624</dcqv1:hasEQA>
+        <dcqv1:hasNoOfClasses rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</dcqv1:hasNoOfClasses>
+        <dcqv1:hasNoOfFeatures rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</dcqv1:hasNoOfFeatures>
+        <dcqv1:hasNoOfInstances rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">299</dcqv1:hasNoOfInstances>
+        <dcqv1:hasSNR rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.23421791210534</dcqv1:hasSNR>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#test2.csv -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#test2.csv">
+        <rdf:type rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#NumberOfClasses"/>
+        <rdf:type rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#NumberOfFeatures"/>
+        <rdf:type rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#NumberOfInstances"/>
+        <rdf:type rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#data"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#ClassEntropy"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#ClassImbalance"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#ClassOverlap"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#EqualNumberOfAttributes"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#SignalNoiseRatio"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/dqv#Metric"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/dqv#hasQualityMeasurement"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/ns/dqv#QualityMeasurement"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/dqv#inDimension"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#Dimension"/>
+            </owl:Restriction>
+        </rdf:type>
+        <dcqv1:hasClassEntropy rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.980377508715691</dcqv1:hasClassEntropy>
+        <dcqv1:hasClassImbalance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</dcqv1:hasClassImbalance>
+        <dcqv1:hasClassOvervlap rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</dcqv1:hasClassOvervlap>
+        <dcqv1:hasEQA rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.181460251566641</dcqv1:hasEQA>
+        <dcqv1:hasNoOfClasses rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</dcqv1:hasNoOfClasses>
+        <dcqv1:hasNoOfFeatures rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</dcqv1:hasNoOfFeatures>
+        <dcqv1:hasNoOfInstances rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">79</dcqv1:hasNoOfInstances>
+        <dcqv1:hasSNR rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.36378460527093</dcqv1:hasSNR>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#wine.data -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#wine.data">
+        <rdf:type rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#NumberOfClasses"/>
+        <rdf:type rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#NumberOfFeatures"/>
+        <rdf:type rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#NumberOfInstances"/>
+        <rdf:type rdf:resource="http://www.e-lico.eu/ontologies/dmo/DMOP/DMOP.owl#data"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#ClassEntropy"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#ClassImbalance"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#ClassOverlap"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#EqualNumberOfAttributes"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#SignalNoiseRatio"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/dqv#Metric"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/dqv#hasQualityMeasurement"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/ns/dqv#QualityMeasurement"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/dqv#inDimension"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#Dimension"/>
+            </owl:Restriction>
+        </rdf:type>
+        <dcqv1:hasClassEntropy rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.988431801378592</dcqv1:hasClassEntropy>
+        <dcqv1:hasClassImbalance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</dcqv1:hasClassImbalance>
+        <dcqv1:hasClassOvervlap rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</dcqv1:hasClassOvervlap>
+        <dcqv1:hasEQA rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.145527513978074</dcqv1:hasEQA>
+        <dcqv1:hasFSA1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">relieff</dcqv1:hasFSA1>
+        <dcqv1:hasFSA2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GR</dcqv1:hasFSA2>
+        <dcqv1:hasNoOfClasses rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</dcqv1:hasNoOfClasses>
+        <dcqv1:hasNoOfFeatures rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</dcqv1:hasNoOfFeatures>
+        <dcqv1:hasNoOfInstances rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">177</dcqv1:hasNoOfInstances>
+        <dcqv1:hasSNR rdf:datatype="http://www.w3.org/2001/XMLSchema#double">12.0104104256961</dcqv1:hasSNR>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/d19125691/ontologies/2022/1/untitled-ontology-45#d">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/d19125691/ontologies/2022/1/untitled-ontology-45#d1">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/d19125691/ontologies/2022/1/untitled-ontology-45#c1">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/d19125691/ontologies/2022/1/untitled-ontology-45#c2">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/d19125691/ontologies/2022/1/untitled-ontology-45#c3">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/d19125691/ontologies/2022/1/untitled-ontology-45#c4">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/d19125691/ontologies/2022/1/untitled-ontology-45#c5">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/d19125691/ontologies/2022/1/untitled-ontology-45#c6">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/d19125691/ontologies/2022/1/untitled-ontology-45#c7">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/d19125691/ontologies/2022/1/untitled-ontology-45#fsa1">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/d19125691/ontologies/2022/1/untitled-ontology-45#fsa2">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Query 1</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/1/untitled-ontology-45#d"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/1/untitled-ontology-45#d1"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#hasClassEntropy"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/1/untitled-ontology-45#d"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/1/untitled-ontology-45#c1"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#hasClassImbalance"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/1/untitled-ontology-45#d"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/1/untitled-ontology-45#c2"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#hasClassOvervlap"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/1/untitled-ontology-45#d"/>
+                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/1/untitled-ontology-45#c3"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#hasCorrelation"/>
+                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/1/untitled-ontology-45#d"/>
+                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/1/untitled-ontology-45#c4"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                <rdf:first>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#hasEntropy"/>
+                                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/1/untitled-ontology-45#d"/>
+                                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/1/untitled-ontology-45#c5"/>
+                                                                    </rdf:Description>
+                                                                </rdf:first>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                        <rdf:first>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#hasEQA"/>
+                                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/1/untitled-ontology-45#d"/>
+                                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/1/untitled-ontology-45#c6"/>
+                                                                            </rdf:Description>
+                                                                        </rdf:first>
+                                                                        <rdf:rest>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                <rdf:first>
+                                                                                    <rdf:Description>
+                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#hasNumberOfFeatures"/>
+                                                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/1/untitled-ontology-45#d"/>
+                                                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/1/untitled-ontology-45#c7"/>
+                                                                                    </rdf:Description>
+                                                                                </rdf:first>
+                                                                                <rdf:rest>
+                                                                                    <rdf:Description>
+                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                        <rdf:first>
+                                                                                            <rdf:Description>
+                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#hasClassEntropy"/>
+                                                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/1/untitled-ontology-45#d1"/>
+                                                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/1/untitled-ontology-45#c1"/>
+                                                                                            </rdf:Description>
+                                                                                        </rdf:first>
+                                                                                        <rdf:rest>
+                                                                                            <rdf:Description>
+                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                <rdf:first>
+                                                                                                    <rdf:Description>
+                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#hasClassImbalance"/>
+                                                                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/1/untitled-ontology-45#d1"/>
+                                                                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/1/untitled-ontology-45#c2"/>
+                                                                                                    </rdf:Description>
+                                                                                                </rdf:first>
+                                                                                                <rdf:rest>
+                                                                                                    <rdf:Description>
+                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                        <rdf:first>
+                                                                                                            <rdf:Description>
+                                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#hasClassOvervlap"/>
+                                                                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/1/untitled-ontology-45#d1"/>
+                                                                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/1/untitled-ontology-45#c3"/>
+                                                                                                            </rdf:Description>
+                                                                                                        </rdf:first>
+                                                                                                        <rdf:rest>
+                                                                                                            <rdf:Description>
+                                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                                <rdf:first>
+                                                                                                                    <rdf:Description>
+                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                                                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#hasCorrelation"/>
+                                                                                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/1/untitled-ontology-45#d1"/>
+                                                                                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/1/untitled-ontology-45#c4"/>
+                                                                                                                    </rdf:Description>
+                                                                                                                </rdf:first>
+                                                                                                                <rdf:rest>
+                                                                                                                    <rdf:Description>
+                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                                        <rdf:first>
+                                                                                                                            <rdf:Description>
+                                                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                                                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#hasEntropy"/>
+                                                                                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/1/untitled-ontology-45#d1"/>
+                                                                                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/1/untitled-ontology-45#c5"/>
+                                                                                                                            </rdf:Description>
+                                                                                                                        </rdf:first>
+                                                                                                                        <rdf:rest>
+                                                                                                                            <rdf:Description>
+                                                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                                                <rdf:first>
+                                                                                                                                    <rdf:Description>
+                                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                                                                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#hasEQA"/>
+                                                                                                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/1/untitled-ontology-45#d1"/>
+                                                                                                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/1/untitled-ontology-45#c6"/>
+                                                                                                                                    </rdf:Description>
+                                                                                                                                </rdf:first>
+                                                                                                                                <rdf:rest>
+                                                                                                                                    <rdf:Description>
+                                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                                                        <rdf:first>
+                                                                                                                                            <rdf:Description>
+                                                                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                                                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#hasNumberOfFeatures"/>
+                                                                                                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/1/untitled-ontology-45#d1"/>
+                                                                                                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/1/untitled-ontology-45#c7"/>
+                                                                                                                                            </rdf:Description>
+                                                                                                                                        </rdf:first>
+                                                                                                                                        <rdf:rest>
+                                                                                                                                            <rdf:Description>
+                                                                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                                                                <rdf:first>
+                                                                                                                                                    <rdf:Description>
+                                                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                                                                                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#hasFSA1"/>
+                                                                                                                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/1/untitled-ontology-45#d"/>
+                                                                                                                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/1/untitled-ontology-45#fsa1"/>
+                                                                                                                                                    </rdf:Description>
+                                                                                                                                                </rdf:first>
+                                                                                                                                                <rdf:rest>
+                                                                                                                                                    <rdf:Description>
+                                                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                                                                        <rdf:first>
+                                                                                                                                                            <rdf:Description>
+                                                                                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                                                                                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#hasFSA2"/>
+                                                                                                                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/1/untitled-ontology-45#d"/>
+                                                                                                                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/1/untitled-ontology-45#fsa2"/>
+                                                                                                                                                            </rdf:Description>
+                                                                                                                                                        </rdf:first>
+                                                                                                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                                                                                                    </rdf:Description>
+                                                                                                                                                </rdf:rest>
+                                                                                                                                            </rdf:Description>
+                                                                                                                                        </rdf:rest>
+                                                                                                                                    </rdf:Description>
+                                                                                                                                </rdf:rest>
+                                                                                                                            </rdf:Description>
+                                                                                                                        </rdf:rest>
+                                                                                                                    </rdf:Description>
+                                                                                                                </rdf:rest>
+                                                                                                            </rdf:Description>
+                                                                                                        </rdf:rest>
+                                                                                                    </rdf:Description>
+                                                                                                </rdf:rest>
+                                                                                            </rdf:Description>
+                                                                                        </rdf:rest>
+                                                                                    </rdf:Description>
+                                                                                </rdf:rest>
+                                                                            </rdf:Description>
+                                                                        </rdf:rest>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#hasFSA1"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/1/untitled-ontology-45#d1"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/1/untitled-ontology-45#fsa1"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1#hasFSA2"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/1/untitled-ontology-45#d1"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/d19125691/ontologies/2022/1/untitled-ontology-45#fsa2"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

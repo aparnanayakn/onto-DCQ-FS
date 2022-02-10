@@ -1,2 +1,0 @@
-<http://data.example.org/sw/10>
-        a       <http://www.example.org/ont#Person> .

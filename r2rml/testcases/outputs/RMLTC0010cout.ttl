@@ -1,2 +1,0 @@
-<http://data.example.org/sw/Bolivia,%20Plurinational%20State%20of>
-        a       <http://www.example.org/ont#Country> .

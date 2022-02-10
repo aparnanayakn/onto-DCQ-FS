@@ -1,0 +1,11 @@
+,dataset,featureSelection_x,featureSelection_y
+0, 'HCV-Egy-Data2.csv', 'GR', 'GR'
+1, 'LasVegasTripAdvisorReviews-Dataset.csv', 'GR', 'GR'
+2, 'Wholesale customers data.csv', 'MI', 'GR'
+3, 'bank-full.csv', 'fcbf', 'GR'
+4, 'caesarian.csv', 'mrmr', 'fcbf'
+5, 'data_banknote_authentication.csv', 'fcbf', 'GR'
+6, 'glass.data', 'MI', 'GR'
+7, 'heart_failure_clinical_records_datase.csv', 'MI', 'MI'
+8, 'iris.data', 'relieff', 'GR'
+9, 'wine.data', 'relieff', 'GR'

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1642411819344" name="http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv0" uri="dcqv1.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1642411819344" name="duplicate:http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1" uri="dcqv3.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1642411819344" name="duplicate:http://www.semanticweb.org/d19125691/ontologies/2022/0/dcqv1" uri="dcqv2.owl"/>
+    </group>
+</catalog>

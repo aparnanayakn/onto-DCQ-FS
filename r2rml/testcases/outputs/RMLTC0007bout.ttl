@@ -1,8 +1,0 @@
-<http://data.example.org/sw/10>
-        a       <http://www.example.org/ont#Person> ;
-        <http://www.example.org/ont#FNAME>
-                "Venus"@xsd:string ;
-        <http://www.example.org/ont#ID>
-                "10" ;
-        <http://www.example.org/ont#LNAME>
-                "Williams" .
