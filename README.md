@@ -13,4 +13,4 @@ Applies various classifiers on all considered FS algorithms
 File: patternAnalysis.ipynb
 Input: modelperformance.csv
 Output: rule.csv
-Ranks FS algorithms based on 
+Ranks FS algorithms based on accuracy and time taken by feature selection algorithms to select features. 
